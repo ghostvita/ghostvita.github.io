@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#logo{
+    font-size: 80pt;
+    font-family: 'Butler';
+    line-height: 80%;
+    font-weight: 800;
+    -webkit-background-clip: text;
+	background-clip: text;
+	background-image: url('homemobile.gif');
+	color: transparent;
+}
+
+a{
+    all: unset;
+}
+b{
+    font-weight: 800;
+}
+
+@keyframes menu {
+    from {height: 0; color: rgba(0, 0, 0, 0);}
+    to {height: 60px; color: rgb(255, 255, 255);}
+}
+
+@keyframes menuAbout {
+    from {height: 0; color: rgba(0, 0, 0, 0);}
+    to {height: 130px; color: rgb(255, 255, 255);}
+}
+
+#worksmenu{
+    display: none;
+    height: 0;
+    
+}
+
+.resizeIc {
+    font-size: 14pt !important;
+}
+
+.datework{
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+.workslink{
+    cursor: pointer;
+}
+
+
+
+ul{
+    list-style-type: disc;
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+#menumusic{
+    display: none;
+    height: 0;
+}
+
+.singlelink{
+    margin-bottom: 10px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.show {
+    display: block !important;
+    animation: menu;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    border-bottom: 1px solid white;
+    transition: border linear 0.5s;   
+}
+
+.showAbt {
+    display: block !important;
+    animation: menuAbout;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    border-bottom: 1px solid white;   
+    transition: border linear 0.5s;
+}
+
+
+#links{
+    margin-top: 20px;
+}

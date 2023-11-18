@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>VITA</title>
+
+        <meta name="robots" content="index, nofollow" />
+        <meta name="revisit-after" content="7" />
+        <meta name="language" content="en" />
+        <meta name="charset" content="UTF-8" />
+        <meta name="copyright" content="ghostvita" />
+        <meta name="author" content="ghostvita" />
+        <meta http-equiv="pragma" content="no-cache" />
+     	<meta property="og:title" content="VITA">
+        <meta property="og:description" content="assembling sounds">
+        <meta http-equiv="cache-control" content="no-cache" />
+        <link href="font.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+        <div id="logo">VITA</div>
+        <div id="descr">assembling sounds</div>
+        <div id="links" class="dropdown">
+            <div class="singlelink"><a href="javascript:showWorks()">about</a></div>
+            <div id="worksmenu">
+                <ul>
+                    <li>
+                        Started <b>Sound Technology</b> degree course @ Conservatorio "Corelli", Messina, Italy
+                        <br><span class="datework"><span class="material-symbols-outlined resizeIc">calendar_month</span> 2022 - currently</span>
+                    </li>
+                    <li>
+                        Teaching <b>I.T. Lab</b> @ Palermo, Italy
+                        <br><span class="datework"><span class="material-symbols-outlined resizeIc">calendar_month</span> 2023 - currently</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="singlelink" id="musicbtn"><a href="javascript:showMusic()">music</a></div>
+            <div id="menumusic">
+                <div class="workslink"><a href="https://youtu.be/jgzeJECrxfY" target="_blank">"Glimmer"</a></div>
+                <div class="workslink"><a href="https://youtu.be/ETC64GsPgSQ" target="_blank">"Compass"</a></div>
+            </div>
+            <div class="singlelink"><a href="https://github.com/ghostvita">consme works</a></div>
+            <div class="singlelink"><a href="mailto:dvcucinotta@gmail.com">contact</a></div>
+        </div>
+    </body>
+    <script>
+        function showMusic() {
+            var dropdowns = document.getElementById("menumusic");
+            dropdowns.classList.toggle("show");
+        }
+
+        function showWorks() {
+            var dropdowns = document.getElementById("worksmenu");
+            dropdowns.classList.toggle("showAbt");
+        }
+        
+        const text = document.getElementById("logo");
+        
+        text.onmouseover = function () {
+        text.innerHTML =
+           "ᚢᛁᛏᛅ";
+           
+        };
+
+        text.onmouseout = function () {
+        text.innerHTML =
+           "VITA";
+        };
+        
+    </script>    
+</html>
