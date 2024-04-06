@@ -1,55 +1,10 @@
-@font-face {
-    font-family: 'Butler';
-    src: url('font/Butler-UltraLight.woff2') format('woff2'),
-        url('font/Butler-UltraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: 'Butler';
-    src: url('font/Butler-Medium.woff2') format('woff2'),
-        url('font/Butler-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('font/Butler-Light.woff2') format('woff2'),
-        url('font/Butler-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('font/Butler-Black.woff2') format('woff2'),
-        url('font/Butler-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('font/Butler-Bold.woff2') format('woff2'),
-        url('font/Butler-Bold.woff') format('woff');
+    font-family: 'Humane-Bold';
+    src: url('font/Humane-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('font/Humane-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
     font-weight: bold;
-    font-style: normal;
+    text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'Butler';
-    src: url('font/Butler-ExtraBold.woff2') format('woff2'),
-        url('font/Butler-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Butler';
-    src: url('font/Butler.woff2') format('woff2'),
-        url('font/Butler.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}

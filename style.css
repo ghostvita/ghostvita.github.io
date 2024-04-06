@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
 body{
     margin: 0;
-    background-color: black;
+    background-color: #f7f7f7;
+    background-image: url("emboss.1.jpg");
+    background-size: 800%;
+    background-repeat: repeat-x;
     color: white;
     text-align: center;
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: 200;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-#descr{
-    opacity: 50%;
-}
 
 html, body {
     height: 100%;
@@ -25,30 +28,24 @@ html {
 
 #main{
     display: inline-block;
+    text-align: center;
 }
 
-body {
-    display: table-cell;
-    vertical-align: middle;
-}
 
 #logo{
-    font-size: 80pt;
-    /*font-family: 'Butler';*/
+    font-size: 200pt;
+    font-family: 'Humane-Bold';
+    font-weight: bold;
     line-height: 80%;
-    font-weight: 800;
-    -webkit-background-clip: text;
-	background-clip: text;
-	background-image: url('homemob.gif');
-    background-size: cover;
-    background-position: center;
-	color: transparent;
-    margin-bottom: 38px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    mix-blend-mode: difference;
 }
 
 a{
     all: unset;
 }
+
 b{
     font-weight: 800;
 }
@@ -71,12 +68,21 @@ li{
 
 .singlelink{
     margin-bottom: 10px;
-    font-size: 11pt;
-    cursor: pointer;
+    font-size: 18pt;
+    /*cursor: pointer;*/
+    font-weight: 500;
+    mix-blend-mode: difference;
 }
 
 
 
 #links{
     margin-top: 20px;
+}
+
+@media screen and (max-width: 800px)  {
+    body{
+        background-size: 600%;
+    }
+    
 }
