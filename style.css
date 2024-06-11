@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 body{
     margin: 0;
+
     background-color: #f7f7f7;
-    background-image: url("emboss.1.jpg");
+    /*background-image: url("emboss.1.jpg");
     background-size: 800%;
-    background-repeat: repeat-x;
-    color: white;
+    background-repeat: repeat-x;*/
+    color: black;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    letter-spacing: -.01rem;
     font-style: normal;
-    text-transform: uppercase;
     display: table-cell;
     vertical-align: middle;
 }
@@ -19,6 +20,7 @@ body{
 
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 html {
@@ -26,24 +28,23 @@ html {
     margin: auto;
 }
 
-#main{
-    display: inline-block;
-    text-align: center;
+
+.splitlink{
+    margin: 0 10px 0 10px;
 }
 
-
 #logo{
-    font-size: 200pt;
+    font-size: 150pt;
     font-family: 'Humane-Bold';
     font-weight: bold;
     line-height: 80%;
     margin-top: 30px;
     margin-bottom: 30px;
-    mix-blend-mode: difference;
 }
 
 a{
     all: unset;
+    cursor: pointer;
 }
 
 b{
@@ -67,11 +68,11 @@ li{
 
 
 .singlelink{
-    margin-bottom: 10px;
+    margin: 20px 0 10px 0;
     font-size: 18pt;
     /*cursor: pointer;*/
+    display: inline-block;
     font-weight: 500;
-    mix-blend-mode: difference;
 }
 
 
@@ -80,9 +81,82 @@ li{
     margin-top: 20px;
 }
 
-@media screen and (max-width: 800px)  {
-    body{
-        background-size: 600%;
-    }
+
+
+.instacontent{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: none;
+    background-size: contain;
+    margin: 10px;
+}
+
+#pictures{
+    display: none;
+    position: relative;
     
+}
+
+#hidepic{
+    position: absolute;
+    font-size: 20pt;
+    left: 6%;
+    top: -10%;
+}
+
+#content-leftovers{
+    position: relative;
+    background-image: url("content/leftovers.jpeg");
+}
+
+#content-noise{
+    position: relative;
+    background-image: url("content/noise.gif");
+}
+
+#content-reverb{
+    position: relative;
+    background-image: url("content/reverb.gif");
+}
+
+#content-leftovers::after{
+    content: "leftovers";
+}
+
+#content-noise::after{
+    content: "noise";
+}
+
+#content-reverb::after{
+    content: "reverb";
+}
+
+.instacontent::after{
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10%;
+    color: white;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.instacontent:hover::after, .instacontent:active::after  {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .instacontent{
+        width: 250px;
+        height: 250px;
+    }
+    #hidepic{
+        top: 0;
+    }
 }

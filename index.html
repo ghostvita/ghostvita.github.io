@@ -16,20 +16,62 @@
         <link href="style.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="icon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="https://kit.fontawesome.com/2685eabbc5.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
-        <div id="main">
+        <div id="home">
+            <div id="main">
+
+                
+                <div id="logo">VITA</div>
+                
             
-            <div id="logo">VITA</div>
-            <div class="singlelink"><a href="https://gvpunto.bandcamp.com" target="_blank">Bandcamp</a></div>
-            <div class="singlelink"><a href="https://youtu.be/jgzeJECrxfY" target="_blank">"Glimmer"</a></div>
+                <div class="singlelink"><a href="https://gvpunto.bandcamp.com" target="_blank"><i class="fa-brands fa-bandcamp"></i></a></div> <span class="splitlink">|</span>
+                <div class="singlelink"><a href="https://github.com/ghostvita" target="_blank"><i class="fa-brands fa-github"></i></a></div> <span class="splitlink">|</span>
+                <div class="singlelink"><a href="https://youtu.be/jgzeJECrxfY" target="_blank"><i class="fa-solid fa-play"></i></a></div> <span class="splitlink">|</span>
+                <div class="singlelink"><a href="javascript:pictures(true)"><i class="fa-solid fa-camera-retro"></i></a></div>
+
+                    
+            </div>
+        </div>
+        <div id="pictures">
             
-           <!-- <div class="singlelink"><a href="https://github.com/ghostvita">ConsMe projects</a></div>   --> 
+            <div id="hidepic">
+               <a href="javascript:pictures(false)">x</a>
+            </div>
+            <a href="#" target="_blank">
+                <div class="instacontent" id="content-reverb" >
+                
+                </div>
+            </a>
+            <a href="https://www.instagram.com/p/C5HFaAxNfJE/" target="_blank">
+                <div class="instacontent" id="content-leftovers">
+                
+                </div>
+            </a>
+            <a href="https://www.instagram.com/p/C4dwfEntgxg/" target="_blank">
+                <div class="instacontent" id="content-noise">
+                    
+                </div>
+            </a>
+            
         </div>
     
         
     </body>
+    <script>
+        function pictures (set){
+            if(set){
+                document.getElementById("home").style.display = "none";
+                document.getElementById("pictures").style.display = "block";
+
+            }
+            else{
+                document.getElementById("home").style.display = "block";
+                document.getElementById("pictures").style.display = "none";
+            }
+        }
+    </script>
  
 </html>
